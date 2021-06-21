@@ -1,3 +1,5 @@
 # Nerdz-UAObfuscatedString
 
-A description of this package.
+This is a fork of: https://github.com/UrbanApps/UAObfuscatedString
+
+It supports SPM as an addition.
