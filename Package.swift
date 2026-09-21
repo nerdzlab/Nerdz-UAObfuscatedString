@@ -20,6 +20,13 @@ let package = Package(
     targets: [
         .target(
             name: "NerdzObfuscatedString"
+        ),
+        .testTarget(
+            name: "NerdzObfuscatedStringTests",
+            dependencies: ["NerdzObfuscatedString"],
+            swiftSettings: [
+                .enableUpcomingFeature("InferSendableFromCaptures")
+            ]
         )
     ]
 )
