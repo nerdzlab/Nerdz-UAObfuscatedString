@@ -3,6 +3,7 @@
 > Keep sensitive string literals out of your binary by assembling them one character at a time.
 
 [![CI](https://github.com/nerdzlab/Nerdz-UAObfuscatedString/actions/workflows/ci.yml/badge.svg)](https://github.com/nerdzlab/Nerdz-UAObfuscatedString/actions/workflows/ci.yml)
+[![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://nerdzlab.github.io/Nerdz-UAObfuscatedString/documentation/nerdzobfuscatedstring/)
 [![Swift Package Manager](https://img.shields.io/badge/SPM-compatible-brightgreen.svg)](https://swift.org/package-manager)
 [![Platform](https://img.shields.io/badge/platform-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS%20%7C%20visionOS-lightgrey.svg)](https://developer.apple.com)
 [![License](https://img.shields.io/badge/license-MIT-black.svg)](LICENSE)
