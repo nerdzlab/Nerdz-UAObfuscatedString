@@ -1,8 +1,10 @@
 //
-//  UAObfuscatedString.swift
+//  String+Obfuscation.swift
+//  NerdzObfuscatedString
 //
 //  Created by Matt Long on 05/11/16.
 //  Copyright (c) 2016 Urban Apps. All rights reserved.
+//  Copyright (c) 2021 NerdzLab. Forked from UrbanApps/UAObfuscatedString.
 //
 
 // swiftlint:disable identifier_name
