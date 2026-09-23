@@ -73,12 +73,19 @@ jobs:
           echo "path=$catalog" >> "$GITHUB_OUTPUT"
           echo "module=$module" >> "$GITHUB_OUTPUT"
 
+      # The whole API lives in extensions on Swift.String, so two extra flags are
+      # required. Without -emit-extension-block-symbols DocC produces no page for any
+      # member of an extension on a type from another module, and without
+      # -symbol-graph-minimum-access-level private the extractor drops the underscore
+      # prefixed digit properties (_0 through _9) as implicitly private.
       - name: Emit symbol graphs
         if: steps.catalog.outputs.found == 'true'
         run: >
           swift build
           -Xswiftc -emit-symbol-graph
           -Xswiftc -emit-symbol-graph-dir -Xswiftc .build/symbol-graphs
+          -Xswiftc -emit-extension-block-symbols
+          -Xswiftc -symbol-graph-minimum-access-level -Xswiftc private
 
       - name: Build documentation
         if: steps.catalog.outputs.found == 'true'

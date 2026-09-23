@@ -5,6 +5,19 @@ All notable changes to NerdzObfuscatedString are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.1]
+
+### Added
+- DocC documentation catalog with a landing page, a Getting Started article, and a doc comment on
+  every one of the 94 properties, published to GitHub Pages on release. The library now documents
+  what the obfuscation protects against and, just as importantly, what it does not.
+
+### Fixed
+- The release workflow emitted symbol graphs without extension block symbols, so DocC produced no
+  page for anything in this library, whose entire API is an extension on `String`. It also dropped
+  the digit properties, because the extractor treats a leading underscore as private. Both are now
+  requested explicitly.
+
 ## [2.0.0]
 
 This is a major release. It contains one breaking change: the package, product, and module are
